@@ -1,7 +1,7 @@
 import * as React from "react";
-import { HeroSection } from "~/components/hero-section";
+import { HeroSection } from "./_components/hero-section";
 
-export default function IndexPage() {
+export default function Page() {
 	return (
 		<main className="container">
 			<HeroSection />
