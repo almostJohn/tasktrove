@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { HeroSection } from "./_components/hero-section";
 
 export const metadata: Metadata = {
-	title: "Pricing",
+	title: "FAQ",
 };
 
 export default function Page() {

@@ -4,7 +4,7 @@ import { cn } from "~/util/cn";
 
 const premiumTierList = [
 	{
-		title: "Subtasks",
+		title: "Unlimited Subtasks",
 	},
 	{
 		title: "Task Prioritization",
