@@ -5,6 +5,10 @@ export const docsConfig = {
 			href: "/",
 		},
 		{
+			title: "Dashboard",
+			href: "/dashboard",
+		},
+		{
 			title: "Pricing",
 			href: "/pricing",
 		},
@@ -17,6 +21,10 @@ export const docsConfig = {
 		{
 			title: "Home",
 			href: "/",
+		},
+		{
+			title: "Dashboard",
+			href: "/dashboard",
 		},
 		{
 			title: "Pricing",
