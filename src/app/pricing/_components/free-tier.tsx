@@ -4,9 +4,6 @@ import { cn } from "~/util/cn";
 
 const freeTierList = [
 	{
-		title: "Basic Task Management",
-	},
-	{
 		title: "Limited Subtasks",
 	},
 	{
@@ -16,23 +13,35 @@ const freeTierList = [
 		title: "Basic Reminders",
 	},
 	{
-		title: "No Recurring Tasks",
+		title: "Recurring Tasks",
+		isFree: false,
 	},
 	{
 		title: "Limited Task Dependencies",
 	},
 	{
-		title: "Basic Task Notes",
+		title: "Limited Task Notes",
 	},
 	{
-		title: "Basic Labels or Tags",
+		title: "Limited Labels or Tags",
 	},
 	{
-		title: "Limited Task Views",
+		title: "Basic Task Views",
 	},
 	{
 		title: "Task Templates",
 		isFree: false,
+	},
+	{
+		title: "Bulk Actions",
+		isFree: false,
+	},
+	{
+		title: "Task Search and Filters",
+		isFree: false,
+	},
+	{
+		title: "Up to 10 Tasks can be Created",
 	},
 ];
 
@@ -59,14 +68,16 @@ export function FreeTier() {
 							{
 								<>
 									{item.isFree === false ? (
-										<X className="mr-2" />
+										<X className="mr-2 text-red-600" />
 									) : (
-										<Check className="mr-2" />
+										<Check className="mr-2 text-green-600" />
 									)}
 									<p
 										className={cn(
 											"text-sm/relaxed",
-											item.isFree === false ? "line-through" : "",
+											item.isFree === false
+												? "line-through text-neutral-500/90"
+												: "",
 										)}
 									>
 										{item.title}
@@ -83,7 +94,7 @@ export function FreeTier() {
 							"btn-disabled",
 						)}
 					>
-						<Check className="h-4 w-4 mr-1" /> Enabled
+						<Check className="h-4 w-4 mr-1" /> Activated
 					</button>
 				</div>
 			</div>

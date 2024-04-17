@@ -36,6 +36,9 @@ const premiumTierList = [
 	{
 		title: "Task Search and Filters",
 	},
+	{
+		title: "Unlimited Tasks can be Created",
+	},
 ];
 
 export function PremiumTier() {
@@ -58,7 +61,7 @@ export function PremiumTier() {
 				<ul className="flex flex-col space-y-4">
 					{premiumTierList.map((item, index) => (
 						<li key={index} className="inline-flex items-center justify-center">
-							<Check className="mr-2" />
+							<Check className="mr-2 text-green-600" />
 							<p className="text-sm/relaxed">{item.title}</p>
 						</li>
 					))}
