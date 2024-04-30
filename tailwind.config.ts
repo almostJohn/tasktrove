@@ -9,8 +9,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				blurple: "#5865f2",
-				lightBlurple: "#7289da",
+				teal: "#45DDC0",
 			},
 		},
 	},

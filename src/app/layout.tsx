@@ -45,7 +45,7 @@ export default function RootLayout({
 					jetBrainsMono.variable,
 				)}
 			>
-				<div className="mx-auto container flex flex-col items-center p-4">
+				<div className="max-w-7xl mx-auto container px-4">
 					<SiteHeader />
 					{children}
 					<SiteFooter />

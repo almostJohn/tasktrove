@@ -1,10 +1,6 @@
 export const docsConfig = {
 	mainNav: [
 		{
-			title: "Home",
-			href: "/",
-		},
-		{
 			title: "Dashboard",
 			href: "/dashboard",
 		},
@@ -18,10 +14,6 @@ export const docsConfig = {
 		},
 	],
 	mobileNav: [
-		{
-			title: "Home",
-			href: "/",
-		},
 		{
 			title: "Dashboard",
 			href: "/dashboard",

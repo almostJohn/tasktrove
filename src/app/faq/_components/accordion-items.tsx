@@ -25,7 +25,7 @@ const faqLists = [
 
 export function AccordionItems() {
 	return (
-		<div className="flex flex-col items-center justify-center gap-4">
+		<div className="flex flex-col items-center justify-center w-full gap-4">
 			{faqLists.map((item, index) => (
 				<div key={index} className="collapse collapse-arrow bg-neutral-200">
 					<input type="radio" name="accordio" defaultChecked />

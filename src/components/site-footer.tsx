@@ -6,16 +6,18 @@ export function SiteFooter() {
 	return (
 		<footer className="footer px-10 py-6 border-t border-neutral-200">
 			<aside className="items-center grid-flow-col">
-				<p className="text-lg leading-none font-bold text-nowrap">tasktrove.</p>
+				<p className="text-lg leading-none tracking-tighter font-bold text-nowrap">
+					tasktrove.
+				</p>
 			</aside>
 			<nav className="md:place-self-center md:justify-self-end">
-				<p>
+				<p className="text-neutral-500">
 					&copy; {new Date().getFullYear()} tasktrove. —{" "}
 					<Link
 						href="/terms"
 						className={cn(
-							"link link-hover",
-							"hover:underline underline-offset-4",
+							"underline underline-offset-2 transition-colors",
+							"hover:text-neutral-900",
 						)}
 					>
 						Terms
@@ -24,8 +26,8 @@ export function SiteFooter() {
 					<Link
 						href="/privacy"
 						className={cn(
-							"link link-hover",
-							"hover:underline underline-offset-4",
+							"underline underline-offset-2 transition-colors",
+							"hover:text-neutral-900",
 						)}
 					>
 						Privacy

@@ -6,3 +6,18 @@ body {
 code {
 	font-family: var(--font-mono);
 }
+
+.animation-pulse {
+	transform: scale(0.97);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.97);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+}
