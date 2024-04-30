@@ -6,11 +6,11 @@ export const docsConfig = {
 		},
 		{
 			title: "Pricing",
-			href: "/pricing",
+			href: "#pricing",
 		},
 		{
 			title: "FAQ",
-			href: "/faq",
+			href: "#faq",
 		},
 	],
 	mobileNav: [
@@ -20,11 +20,11 @@ export const docsConfig = {
 		},
 		{
 			title: "Pricing",
-			href: "/pricing",
+			href: "#pricing",
 		},
 		{
 			title: "FAQ",
-			href: "/faq",
+			href: "#faq",
 		},
 	],
 };

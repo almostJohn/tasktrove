@@ -16,7 +16,7 @@ export function SiteFooter() {
 					<Link
 						href="/terms"
 						className={cn(
-							"underline underline-offset-2 transition-colors",
+							"underline underline-offset-1 transition-colors",
 							"hover:text-neutral-900",
 						)}
 					>
@@ -26,7 +26,7 @@ export function SiteFooter() {
 					<Link
 						href="/privacy"
 						className={cn(
-							"underline underline-offset-2 transition-colors",
+							"underline underline-offset-1 transition-colors",
 							"hover:text-neutral-900",
 						)}
 					>

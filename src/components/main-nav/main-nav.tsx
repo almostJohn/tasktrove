@@ -9,7 +9,7 @@ export function MainNav() {
 		<>
 			<header
 				className={cn(
-					"hidden navbar sticky top-0 z-50 h-14 w-full bg-neutral-100/60 border-b border-neutral-200/40 backdrop-blur transition-shadow lg:flex",
+					"hidden navbar sticky top-0 z-50 h-20 w-full bg-neutral-100/60 border-b border-neutral-200/60 backdrop-blur transition-shadow lg:flex",
 				)}
 			>
 				<NavStart />
