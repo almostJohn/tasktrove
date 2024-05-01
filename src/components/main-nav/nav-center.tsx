@@ -17,6 +17,7 @@ export function NavCenter() {
 						<Link
 							key={item.href}
 							href={item.href}
+							passHref
 							className={cn(
 								"inline-flex border-transparent bg-transparent px-4 py-2 items-center justify-center rounded-md font-bold text-sm text-center transition-colors hover:bg-teal/60 focus:outline-none focus:ring focus:ring-blue-400",
 								pathname === item.href ? "bg-teal/80" : "hover:bg-teal/60",

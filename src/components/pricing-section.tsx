@@ -53,7 +53,7 @@ const faqLists = [
 export function PricingSection() {
 	return (
 		<div className="mx-auto container justify-center">
-			<div>
+			<div id="pricing">
 				<h1 className="text-3xl font-bold leading-none tracking-tighter lg:text-6xl">
 					Get Everything. One-time Payment.
 				</h1>
@@ -63,10 +63,7 @@ export function PricingSection() {
 				</p>
 			</div>
 			<div className="flex flex-col pt-8 justify-center gap-4 lg:flex-row">
-				<div
-					id="pricing"
-					className="mx-auto max-w-xl card bg-transparent rounded-lg shadow border border-neutral-200 lg:card-side"
-				>
+				<div className="mx-auto max-w-xl card bg-transparent rounded-lg shadow border border-neutral-200 lg:card-side">
 					<div className="card-body">
 						<h2 className={cn("card-title", "font-bold text-2xl leading-none")}>
 							One-time Payment.
