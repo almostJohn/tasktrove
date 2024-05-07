@@ -40,12 +40,12 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"bg-neutral-100 text-neutral-900 antialiased",
+					"bg-slate-100 text-slate-900 antialiased selection:text-white selection:bg-teal",
 					inter.variable,
 					jetBrainsMono.variable,
 				)}
 			>
-				<div className="max-w-7xl mx-auto container px-4">
+				<div className="max-w-7xl mx-auto container">
 					<SiteHeader />
 					{children}
 					<SiteFooter />

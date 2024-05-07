@@ -1,7 +1,7 @@
 export const siteConfig = {
-	name: "tasktrove.",
+	name: "tasktrove",
 	title: {
-		default: "Organize Now, Delete Later",
-		template: "%s — tasktrove.",
+		default: "tasktrove",
+		template: "%s — tasktrove",
 	},
 };

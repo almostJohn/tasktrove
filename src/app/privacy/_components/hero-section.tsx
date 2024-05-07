@@ -18,9 +18,10 @@ export function HeroSection() {
 				When you create an account on the site, we collect the following
 				personal information:
 				<br />
-				<br />
-				• Your name
-				<br />• Your email address
+				<span className="inline-block mt-4 ml-4">
+					• Your name
+					<br />• Your email address
+				</span>
 				<br />
 				<br />
 				We use your name and email address for identification and

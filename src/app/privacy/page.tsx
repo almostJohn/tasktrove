@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
 	return (
-		<main className="mx-auto max-w-2xl container flex flex-col items-center p-4">
+		<main className="mx-auto max-w-2xl container flex flex-col items-center px-8 lg:px-4">
 			<HeroSection />
 		</main>
 	);

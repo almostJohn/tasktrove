@@ -1,13 +1,37 @@
+import Link from "next/link";
 import * as React from "react";
-import { HeroSection } from "~/components/hero-section";
-import { PricingSection } from "~/components/pricing-section";
+import { Announcement } from "~/components/announcement";
+import {
+	PageActions,
+	PageHeader,
+	PageHeaderDescription,
+	PageHeading,
+} from "~/components/page-header";
+import { buttonVariants } from "~/components/ui/button";
+import { cn } from "~/util/cn";
 
 export default function IndexPage() {
 	return (
-		<div className="mx-auto max-w-6xl container flex flex-col justify-center pt-8 pb-24 px-6 lg:pt-16 lg:pb-40">
-			<HeroSection />
-			<hr className="border-t border-neutral-200 w-full my-8 lg:my-24" />
-			<PricingSection />
+		<div className="mx-auto container px-8 py-2 lg:py-5">
+			<PageHeader>
+				<Announcement />
+				<PageHeading>Uncover Your Productivity Potential</PageHeading>
+				<PageHeaderDescription>
+					tasktrove helps you effortlessly categorize and prioritize tasks,
+					freeing your mind from clutter. Embrace efficiency today!
+				</PageHeaderDescription>
+				<PageActions>
+					<Link href="/sign-in" className={cn(buttonVariants())}>
+						Get Started
+					</Link>
+					<Link
+						href="/pricing"
+						className={cn(buttonVariants({ variant: "outline" }))}
+					>
+						View Pricing
+					</Link>
+				</PageActions>
+			</PageHeader>
 		</div>
 	);
 }
