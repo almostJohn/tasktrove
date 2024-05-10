@@ -9,22 +9,24 @@ export const metadata: Metadata = {
 
 export default function Page() {
 	return (
-		<div className="mx-auto container px-8 pt-2 pb-12 lg:pt-5 lg:pb-16">
-			<div className="flex flex-col items-center justify-center">
-				<div className="text-center">
-					<h1 className="text-5xl font-bold leading-none tracking-tight">
-						Worry about your tasks,{" "}
-						<span className="text-teal">not your bill.</span>
-					</h1>
-					<p className="py-6 font-light text-lg text-slate-500">
-						We wanted pricing to be as simple as possible, No calculator needed.
-					</p>
-				</div>
-				<div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-					<FreeTier />
-					<PremiumTier />
+		<>
+			<div className="container relative px-4 py-8">
+				<div className="flex flex-col items-center justify-center">
+					<div className="text-center">
+						<h1 className="text-3xl font-bold leading-none tracking-tight lg:text-5xl">
+							Worry about your tasks, not your bill.
+						</h1>
+						<p className="py-6 font-light text-lg text-neutral-500">
+							We wanted pricing to be as simple as possible, No calculator
+							needed.
+						</p>
+					</div>
+					<div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+						<FreeTier />
+						<PremiumTier />
+					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }

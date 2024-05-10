@@ -19,7 +19,7 @@ export function PageHeader({
 	);
 }
 
-export function PageHeading({
+export function PageHeaderHeading({
 	className,
 	...props
 }: React.HTMLAttributes<HTMLHeadingElement>) {
@@ -41,7 +41,7 @@ export function PageHeaderDescription({
 	return (
 		<p
 			className={cn(
-				"max-w-[750px] text-center text-lg font-light text-slate-500",
+				"max-w-[750px] text-center text-lg font-light text-neutral-500",
 				className,
 			)}
 			{...props}

@@ -17,7 +17,7 @@ const freeTierList = [
 		isFree: false,
 	},
 	{
-		title: "Up to 15 tasks can be created",
+		title: "Up to 15 tasks",
 	},
 ];
 
@@ -25,8 +25,8 @@ export function FreeTier() {
 	return (
 		<div
 			className={cn(
-				"card lg:card-side",
-				"bg-transparent border border-slate-300",
+				"card shadow lg:card-side",
+				"bg-transparent rounded-box border border-neutral-300",
 			)}
 		>
 			<div className="card-body">
@@ -36,16 +36,16 @@ export function FreeTier() {
 						"font-bold text-2xl leading-none tracking-tighter",
 					)}
 				>
-					Free Tier
+					Free
 				</h1>
 				<p className="py-2 font-light">
 					Everything you need to start making tasks.
 				</p>
-				<div className="inline-flex border border-slate-300 bg-transparent rounded-md px-6 py-3 items-center justify-center">
+				<div className="inline-flex border border-neutral-300 bg-transparent rounded-md px-6 py-3 items-center justify-center">
 					<h2 className="text-5xl font-bold">$0</h2>
 					<div className="ml-2 flex flex-col">
 						<p className="text-xs font-medium">free</p>
-						<p className="text-xs text-slate-500">forever</p>
+						<p className="text-xs text-neutral-500">forever</p>
 					</div>
 				</div>
 				<div className="py-6 mx-auto flex flex-col justify-center gap-4">
@@ -53,14 +53,14 @@ export function FreeTier() {
 						<div key={index} className="flex items-center justify-center">
 							{item.isFree === false ? (
 								<>
-									<X className="text-red-600 w-5" />
-									<p className="ml-3 line-through text-slate-500">
+									<X className="w-5" />
+									<p className="ml-3 line-through text-neutral-500">
 										{item.title}
 									</p>
 								</>
 							) : (
 								<>
-									<Check className="text-teal w-5" />
+									<Check className="w-5" />
 									<p className="ml-3">{item.title}</p>
 								</>
 							)}

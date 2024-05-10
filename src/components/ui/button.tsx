@@ -6,11 +6,12 @@ export const buttonVariants = cva(
 		variants: {
 			variant: {
 				default:
-					"bg-slate-900 text-white border-transparent hover:bg-slate-900/90",
-				outline: "bg-transparent border border-slate-300 hover:bg-slate-200/90",
+					"bg-neutral-900 text-white border-transparent hover:bg-neutral-900/90",
+				outline:
+					"bg-transparent border border-neutral-200 hover:bg-neutral-200/90",
 				destructive:
-					"bg-red-500 text-white border-transparent hover:bg-red-500/90",
-				ghost: "bg-transparent border-transparent hover:bg-slate-200/90",
+					"bg-red-600 text-white border-transparent hover:bg-red-600/90",
+				ghost: "bg-transparent border-transparent hover:bg-neutral-200/90",
 				urlLink:
 					"bg-transparent border-transparent underline underline-offset-4",
 			},
