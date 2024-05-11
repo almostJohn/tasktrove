@@ -1,10 +1,10 @@
 body {
-	font-family: var(--font-inter);
+	font-family: var(--font-geist-sans);
 	min-height: 100vh;
 }
 
 code {
-	font-family: var(--font-mono);
+	font-family: var(--font-geist-mono);
 }
 
 .animation-pulse {

@@ -2,17 +2,17 @@ import * as React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Dashboard",
+	title: "Pricing",
 };
 
-export default function DashboardLayout({
+export default function PricingLayout({
 	children,
 }: {
 	readonly children: React.ReactNode;
 }) {
 	return (
-		<>
-			<div className="max-w-7xl mx-auto container">{children}</div>
-		</>
+		<div className="mx-auto container flex flex-col items-center py-6 px-4 md:py-12">
+			{children}
+		</div>
 	);
 }

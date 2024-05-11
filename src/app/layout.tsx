@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
-import { inter, jetBrainsMono } from "~/util/fonts";
+import { inter, jetBrainsMono, fontSans } from "~/util/fonts";
 import { cn } from "~/util/cn";
 import { siteConfig } from "~/config/site";
 import { SiteHeader } from "~/components/site-header";
@@ -41,11 +41,12 @@ export default function RootLayout({
 			<body
 				className={cn(
 					"bg-neutral-100 text-neutral-900 antialiased",
+					fontSans.variable,
 					inter.variable,
 					jetBrainsMono.variable,
 				)}
 			>
-				<div className="container mx-auto">
+				<div className="mx-auto min-h-screen flex flex-col items-center">
 					<SiteHeader />
 					{children}
 					<SiteFooter />

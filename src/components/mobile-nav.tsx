@@ -4,19 +4,19 @@ import * as React from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { cn } from "~/util/cn";
-import { docsConfig } from "~/config/docs";
 import { buttonVariants } from "./ui/button";
+import { docsConfig } from "~/config/docs";
 
 export function MobileNav() {
-	const [open, setOpen] = React.useState(false);
+	const [interacted, setInteracted] = React.useState(false);
 	const dropdownRef = React.useRef<HTMLDivElement>(null);
 
-	const toggleMenu = () => {
-		setOpen(!open);
+	const toggleDropdown = () => {
+		setInteracted(!interacted);
 	};
 
-	const closeMenu = () => {
-		setOpen(false);
+	const closeDropdown = () => {
+		setInteracted(false);
 	};
 
 	React.useEffect(() => {
@@ -25,7 +25,7 @@ export function MobileNav() {
 				dropdownRef.current &&
 				!dropdownRef.current.contains(e.target as Node)
 			) {
-				closeMenu();
+				closeDropdown();
 			}
 		};
 
@@ -43,26 +43,26 @@ export function MobileNav() {
 				role="button"
 				className={cn(
 					buttonVariants({ variant: "ghost" }),
-					"px-2 py-1.5 lg:hidden",
+					"px-2 py-1.5 md:hidden",
 				)}
-				onClick={toggleMenu}
+				onClick={toggleDropdown}
 			>
-				{open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+				{interacted ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
 			</div>
-			{open && (
+			{interacted && (
 				<ul
 					tabIndex={0}
-					className="flex flex-col dropdown-content mt-3 py-2 z-[1] shadow border border-neutral-300 bg-neutral-100 rounded w-52"
+					className="flex flex-col dropdown-content mt-3 z-[1] py-2 shadow border border-neutral-200 bg-white rounded-md w-52"
 				>
-					{docsConfig.mobileNav.map((item) => (
+					{docsConfig.navItems.map((item) => (
 						<li key={item.href}>
 							<Link
 								href={item.href}
 								className={cn(
-									"inline-flex border-transparent bg-transparent px-4 py-2 w-full items-center text-sm font-medium transition-all hover:bg-neutral-200/90",
+									"inline-flex border border-transparent bg-transparent px-4 py-2 w-full items-center text-sm font-medium transition-colors hover:bg-neutral-200",
 								)}
 							>
-								{item.title}
+								{item.label}
 							</Link>
 						</li>
 					))}

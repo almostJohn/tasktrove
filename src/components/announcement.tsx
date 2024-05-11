@@ -9,7 +9,7 @@ export function Announcement() {
 			className="inline-flex items-center rounded-lg bg-neutral-200 px-3 py-1 text-sm font-medium"
 		>
 			<LayoutDashboard className="h-4 w-4 mr-1" />{" "}
-			<span>Check out dashboard!</span>
+			<span>Check Out Dashboard</span>
 			<ArrowRightIcon className="ml-1 h-4 w-4" />
 		</Link>
 	);

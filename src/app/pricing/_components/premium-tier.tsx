@@ -1,8 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
 import { Check } from "lucide-react";
-import { cn } from "~/util/cn";
 import { buttonVariants } from "~/components/ui/button";
+import { cn } from "~/util/cn";
 
 const premiumTierList = [
 	{
@@ -23,8 +23,8 @@ export function PremiumTier() {
 	return (
 		<div
 			className={cn(
-				"card shadow lg:card-side",
-				"bg-transparent rounded-box border border-neutral-900",
+				"card shadow md:card-side",
+				"bg-white rounded-box border-2 border-neutral-900",
 			)}
 		>
 			<div className="card-body">
@@ -44,8 +44,8 @@ export function PremiumTier() {
 				<p className="py-2 font-light">
 					Access to task templates. Unlock all features.
 				</p>
-				<div className="inline-flex border border-neutral-900 bg-transparent rounded-md px-6 py-3 items-center justify-center">
-					<h2 className="text-5xl font-bold">$20</h2>
+				<div className="inline-flex border-2 border-neutral-900 bg-transparent rounded-lg px-6 py-3 items-center justify-center">
+					<h3 className="text-4xl font-bold">$20</h3>
 					<div className="ml-2 flex flex-col">
 						<p className="text-xs font-medium">one-time payment</p>
 						<p className="text-xs text-neutral-500">plus local taxes</p>
@@ -54,12 +54,12 @@ export function PremiumTier() {
 				<div className="py-6 mx-auto flex flex-col justify-center gap-4">
 					{premiumTierList.map((item, index) => (
 						<div key={index} className="flex items-center justify-center">
-							<Check className="w-5" />
+							<Check className="h-4 w-4" />
 							<p className="ml-3">{item.title}</p>
 						</div>
 					))}
 				</div>
-				<hr className="border-t border-slate-300 visible w-full" />
+				<hr className="border-t border-neutral-300 visible w-full" />
 				<div className="mx-auto w-full flex items-center justify-center pt-6">
 					<Link href="/sign-in" className={cn(buttonVariants(), "w-full")}>
 						Get Started

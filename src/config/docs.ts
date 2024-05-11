@@ -1,21 +1,11 @@
 export const docsConfig = {
-	mainNav: [
+	navItems: [
 		{
-			title: "Dashboard",
+			label: "Dashboard",
 			href: "/dashboard",
 		},
 		{
-			title: "Pricing",
-			href: "/pricing",
-		},
-	],
-	mobileNav: [
-		{
-			title: "Dashboard",
-			href: "/dashboard",
-		},
-		{
-			title: "Pricing",
+			label: "Pricing",
 			href: "/pricing",
 		},
 	],
