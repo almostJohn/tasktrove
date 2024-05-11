@@ -27,7 +27,7 @@ export default function IndexPage() {
 								your mind from clutter. Embrace efficiency today with seamless
 								task management.
 							</p>
-							<div className="flex items-center justify-center w-full gap-4">
+							<div className="flex items-center justify-center w-full gap-4 pb-12">
 								<Link href="/sign-in" className={cn(buttonVariants())}>
 									Get Started
 								</Link>
