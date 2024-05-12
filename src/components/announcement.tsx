@@ -6,11 +6,11 @@ export function Announcement() {
 	return (
 		<Link
 			href="/dashboard"
-			className="inline-flex items-center rounded-lg bg-neutral-200 px-3 py-1 text-sm font-medium"
+			className="inline-flex px-4 py-2 rounded-full bg-transparent border border-neutral-200 items-center text-center text-sm font-medium hover:border-neutral-300"
 		>
-			<LayoutDashboard className="h-4 w-4 mr-1" />{" "}
-			<span>Check Out Dashboard</span>
-			<ArrowRightIcon className="ml-1 h-4 w-4" />
+			<LayoutDashboard className="mr-2 h-4 w-4" />{" "}
+			<span>Check out Dashboard</span>
+			<ArrowRightIcon className="ml-2 h-4 w-4" />
 		</Link>
 	);
 }
