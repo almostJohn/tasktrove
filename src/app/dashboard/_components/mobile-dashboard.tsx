@@ -6,7 +6,7 @@ import { cn } from "~/util/cn";
 
 export function MobileDashboard() {
 	return (
-		<div className="flex flex-col items-center justify-center pt-8 pb-20 space-y-12 md:hidden">
+		<div className="flex flex-col items-center justify-center pt-8 pb-32 space-y-12 md:hidden">
 			<div className="flex flex-col items-center px-4">
 				<div className="text-2xl font-semibold leading-4">Your Tasks</div>
 				<div className="flex items-center pt-6">
