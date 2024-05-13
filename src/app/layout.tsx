@@ -7,7 +7,6 @@ import { SiteHeader } from "~/components/site-header";
 import { SiteFooter } from "~/components/site-footer";
 
 import "../styles/globals.css";
-import "../styles/default-styles.css";
 
 export const metadata: Metadata = {
 	title: siteConfig.title,

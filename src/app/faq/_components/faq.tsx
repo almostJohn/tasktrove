@@ -7,7 +7,7 @@ export function FAQ() {
 			<div
 				className={cn(
 					"collapse collapse-arrow border border-neutral-300 bg-white",
-					"rounded-lg",
+					"rounded-md",
 				)}
 			>
 				<input type="radio" name="faq-accordion" defaultChecked />
@@ -16,7 +16,7 @@ export function FAQ() {
 				</div>
 				<div className="collapse-content">
 					<p className="text-sm leading-4">
-						The free plan gives you access to basic task management. However,
+						The Free plan gives you access to basic task management. However,
 						you cannot create tasks in the same way as in the Premium plan.
 					</p>
 				</div>
@@ -24,7 +24,7 @@ export function FAQ() {
 			<div
 				className={cn(
 					"collapse collapse-arrow border border-neutral-300 bg-white",
-					"rounded-lg",
+					"rounded-md",
 				)}
 			>
 				<input type="radio" name="faq-accordion" />
@@ -33,7 +33,7 @@ export function FAQ() {
 				</div>
 				<div className="collapse-content">
 					<p className="text-sm leading-4">
-						The premium plan gives access to the task templates and advanced
+						The Premium plan gives you access to the task templates and advanced
 						task management features.
 					</p>
 				</div>
@@ -41,7 +41,7 @@ export function FAQ() {
 			<div
 				className={cn(
 					"collapse collapse-arrow border border-neutral-300 bg-white",
-					"rounded-lg",
+					"rounded-md",
 				)}
 			>
 				<input type="radio" name="faq-accordion" />
@@ -61,7 +61,7 @@ export function FAQ() {
 			<div
 				className={cn(
 					"collapse collapse-arrow border border-neutral-300 bg-white",
-					"rounded-lg",
+					"rounded-md",
 				)}
 			>
 				<input type="radio" name="faq-accordion" />
@@ -83,7 +83,7 @@ export function FAQ() {
 			<div
 				className={cn(
 					"collapse collapse-arrow border border-neutral-300 bg-white",
-					"rounded-lg",
+					"rounded-md",
 				)}
 			>
 				<input type="radio" name="faq-accordion" />
