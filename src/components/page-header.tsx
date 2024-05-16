@@ -73,7 +73,10 @@ export function PageActions({
 }: React.HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
-			className={cn("flex items-center justify-center w-full gap-4", className)}
+			className={cn(
+				"flex items-center justify-center w-full gap-4 pb-24",
+				className,
+			)}
 			{...props}
 		/>
 	);
