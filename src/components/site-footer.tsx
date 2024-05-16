@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function SiteFooter() {
 	return (
-		<footer className="footer footer-center p-10 bg-neutral-800 text-neutral-100 w-full">
+		<footer className="footer footer-center bottom-0 p-10 bg-neutral-800 text-neutral-100 w-full">
 			<nav className="grid grid-flow-col gap-4">
 				<Link href="/faq" className="link link-hover">
 					FAQ
