@@ -18,24 +18,22 @@ export function PrivacyContent() {
 				information:
 				<br />
 				<br />
-				<span className="inline-flex flex-col ml-6">
-					<li>
-						Your email address (currently{" "}
-						<strong className="text-neutral-900">Google</strong> is our only
-						provider)
-					</li>
+				<span className="inline-block flex-col ml-6">
+					<li>Your name</li>
+					<li>Your email address</li>
 				</span>
 				<br />
 				<br />
-				We use your email address for identification and authentication.
+				We use your name and email address for identification and
+				authentication.
 				<br />
 				<br />
 				You will also receive authentication emails at the email address
 				provided.
 				<br />
 				<br />
-				We <strong className="text-neutral-900">DO NOT</strong> share any
-				personal information to third parties.
+				We <strong className="text-neutral-900 font-bold">DO NOT</strong> share
+				any personal information to third parties.
 				<br />
 				<br />
 				<strong className="text-lg leading-4 text-neutral-900">Changes</strong>

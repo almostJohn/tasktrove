@@ -1,5 +1,7 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs/server";
 import { inter, jetBrainsMono, fontSans } from "~/util/fonts";
 import { cn } from "~/util/cn";
 import { siteConfig } from "~/config/site";
@@ -35,22 +37,26 @@ export default function RootLayout({
 }: {
 	readonly children: React.ReactNode;
 }) {
+	const { userId } = auth();
+
 	return (
-		<html lang="en" suppressHydrationWarning>
-			<body
-				className={cn(
-					"bg-neutral-100 text-neutral-900 antialiased",
-					fontSans.variable,
-					inter.variable,
-					jetBrainsMono.variable,
-				)}
-			>
-				<div className="mx-auto min-h-screen flex flex-col items-center">
-					<SiteHeader />
-					{children}
-					<SiteFooter />
-				</div>
-			</body>
-		</html>
+		<ClerkProvider>
+			<html lang="en" suppressHydrationWarning>
+				<body
+					className={cn(
+						"bg-neutral-100 text-neutral-900 antialiased",
+						fontSans.variable,
+						inter.variable,
+						jetBrainsMono.variable,
+					)}
+				>
+					<div className="mx-auto min-h-screen flex flex-col items-center">
+						<SiteHeader />
+						{children}
+						{!userId && <SiteFooter />}
+					</div>
+				</body>
+			</html>
+		</ClerkProvider>
 	);
 }

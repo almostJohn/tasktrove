@@ -7,7 +7,10 @@ export function PageHeader({
 	...props
 }: React.HTMLAttributes<HTMLDivElement>) {
 	return (
-		<section className={cn("hero py-7 md:py-12", className)} {...props}>
+		<section
+			className={cn("hero py-8 md:pt-10 md:pb-20", className)}
+			{...props}
+		>
 			{children}
 		</section>
 	);
@@ -70,10 +73,7 @@ export function PageActions({
 }: React.HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
-			className={cn(
-				"flex items-center justify-center w-full gap-4 pb-12",
-				className,
-			)}
+			className={cn("flex items-center justify-center w-full gap-4", className)}
 			{...props}
 		/>
 	);
