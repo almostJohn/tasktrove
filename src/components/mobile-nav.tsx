@@ -37,7 +37,7 @@ export function MobileNav() {
 	}, []);
 
 	return (
-		<div className="dropdown dropdown-end" ref={dropdownRef}>
+		<div className={cn("dropdown dropdown-end")} ref={dropdownRef}>
 			<div
 				tabIndex={0}
 				role="button"

@@ -11,8 +11,10 @@ export default function DashboardLayout({
 	readonly children: React.ReactNode;
 }) {
 	return (
-		<div className="mx-auto flex container flex-col items-center py-2 px-4 md:py-4">
-			{children}
-		</div>
+		<>
+			<div className="mx-auto flex container flex-col items-center py-2 px-4 md:py-4">
+				{children}
+			</div>
+		</>
 	);
 }

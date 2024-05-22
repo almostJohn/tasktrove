@@ -19,17 +19,11 @@ export function PrivacyContent() {
 				<br />
 				<br />
 				<span className="inline-block flex-col ml-6">
-					<li>Your name</li>
-					<li>Your email address</li>
+					<li>Your Discord</li>
 				</span>
 				<br />
 				<br />
-				We use your name and email address for identification and
-				authentication.
-				<br />
-				<br />
-				You will also receive authentication emails at the email address
-				provided.
+				We use your Discord username for identification and authentication.
 				<br />
 				<br />
 				We <strong className="text-neutral-900 font-bold">DO NOT</strong> share

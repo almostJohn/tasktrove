@@ -1,7 +1,16 @@
+"use client";
+
 import * as React from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export function SiteFooter() {
+	const pathname = usePathname();
+
+	if (pathname === "/sign-in") {
+		return null;
+	}
+
 	return (
 		<footer className="footer footer-center bottom-0 p-10 bg-neutral-800 text-neutral-100 w-full">
 			<nav className="grid grid-flow-col gap-4">

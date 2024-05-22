@@ -8,7 +8,7 @@ export function PageHeader({
 }: React.HTMLAttributes<HTMLDivElement>) {
 	return (
 		<section
-			className={cn("hero pt-8 pb-12 md:pt-10 md:pb-20", className)}
+			className={cn("hero px-4 pt-8 pb-12 md:pt-10 md:pb-20", className)}
 			{...props}
 		>
 			{children}
@@ -47,7 +47,7 @@ export function PageHeaderHeading({
 	return (
 		<h1
 			className={cn(
-				"mt-4 text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1]",
+				"mt-5 text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1]",
 				className,
 			)}
 			{...props}

@@ -11,7 +11,7 @@ export default function SignInLayout({
 	readonly children: React.ReactNode;
 }) {
 	return (
-		<div className="mx-auto container flex flex-col items-center py-6 px-4 md:py-12">
+		<div className="mx-auto min-h-screen flex flex-col items-center justify-center px-4">
 			{children}
 		</div>
 	);
