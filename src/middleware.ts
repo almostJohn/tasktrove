@@ -5,4 +5,6 @@ export function middleware(request: NextRequest) {
 	if (request.nextUrl.pathname.startsWith("/dashboard")) {
 		return NextResponse.redirect(new URL("/sign-in", request.url));
 	}
+
+	return null;
 }
