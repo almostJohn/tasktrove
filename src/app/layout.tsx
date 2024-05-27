@@ -39,7 +39,7 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"bg-neutral-100 text-neutral-900 antialiased",
+					"bg-neutral-50 text-black antialiased",
 					fontSans.variable,
 					inter.variable,
 					jetBrainsMono.variable,

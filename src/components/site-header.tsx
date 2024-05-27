@@ -19,7 +19,7 @@ export function SiteHeader() {
 	return (
 		<header
 			className={cn(
-				"navbar sticky top-0 z-50 h-20 w-full px-6 bg-neutral-100/60 border-b border-neutral-300/40 backdrop-blur transition-shadow",
+				"navbar sticky top-0 z-50 h-20 w-full px-6 border-b border-neutral-200/40 bg-opacity-50 backdrop-blur transition-shadow",
 			)}
 		>
 			<div className="navbar-start">

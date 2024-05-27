@@ -1,5 +1,5 @@
 import * as React from "react";
-import { SiDiscord as Discord } from "@icons-pack/react-simple-icons";
+import { SiGoogle as Google } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 import { buttonVariants } from "~/components/ui/button";
 import { cn } from "~/util/cn";
@@ -34,8 +34,8 @@ export function SignInUI() {
 						<button
 							className={cn(buttonVariants({ variant: "outline" }), "w-full")}
 						>
-							<Discord className="mr-2 h-4 w-4" />
-							<span>Sign In with Discord</span>
+							<Google className="mr-2 h-4 w-4" />
+							<span>Sign In with Google</span>
 						</button>
 					</div>
 				</div>

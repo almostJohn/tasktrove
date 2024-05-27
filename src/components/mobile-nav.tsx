@@ -43,7 +43,7 @@ export function MobileNav() {
 				role="button"
 				className={cn(
 					buttonVariants({ variant: "ghost" }),
-					"px-2 py-1.5 md:hidden",
+					"px-2 py-1.5 md:hidden hover:bg-transparent",
 				)}
 				onClick={toggleDropdown}
 			>

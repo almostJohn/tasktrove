@@ -7,10 +7,7 @@ export function PageHeader({
 	...props
 }: React.HTMLAttributes<HTMLDivElement>) {
 	return (
-		<section
-			className={cn("hero px-4 pt-8 pb-12 md:pt-10 md:pb-20", className)}
-			{...props}
-		>
+		<section className={cn("hero px-4 py-12", className)} {...props}>
 			{children}
 		</section>
 	);

@@ -29,7 +29,7 @@ export default function IndexPage() {
 								task management.
 							</PageHeaderDescription>
 							<PageActions>
-								<Link href="/sign-in" className={cn(buttonVariants())}>
+								<Link href="/dashboard" className={cn(buttonVariants())}>
 									Get Started
 								</Link>
 								<Link

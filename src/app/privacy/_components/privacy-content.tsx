@@ -2,8 +2,8 @@ import * as React from "react";
 
 export function PrivacyContent() {
 	return (
-		<article className="prose text-neutral-900">
-			<p className="text-neutral-900">
+		<article className="prose text-black">
+			<p className="text-black">
 				This Privacy Policy describes how your personal information is
 				collected, used, and shared when you visit or make a purchase from
 				tsktrve.vercel.app (the “Site”).
@@ -19,11 +19,12 @@ export function PrivacyContent() {
 				<br />
 				<br />
 				<span className="inline-block flex-col ml-6">
-					<li>Your Discord</li>
+					<li>Your Google</li>
 				</span>
 				<br />
 				<br />
-				We use your Discord username for identification and authentication.
+				We use your <strong className="text-black font-bold">Google</strong> for
+				identification and authentication.
 				<br />
 				<br />
 				We <strong className="text-neutral-900 font-bold">DO NOT</strong> share
