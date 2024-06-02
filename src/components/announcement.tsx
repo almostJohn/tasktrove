@@ -1,14 +1,19 @@
 import * as React from "react";
-import { PartyPopper } from "lucide-react";
+import Link from "next/link";
+import { LayoutDashboard, ArrowRight } from "lucide-react";
+import { cn } from "~/lib/utils";
 
 export function Announcement() {
 	return (
-		<div className="inline-flex items-center justify-center px-6 py-2 border border-neutral-300 bg-transparent rounded-lg">
-			<PartyPopper className="mr-2 h-5 w-5" />
-			<h1 className="text-sm font-mono">
-				Limited Offer - Lifetime access for just{" "}
-				<span className="line-through text-neutral-500">$82</span> $20
-			</h1>
-		</div>
+		<Link
+			href="/dashboard"
+			className={cn(
+				"inline-flex items-center rounded-lg px-3 py-1 text-sm font-medium bg-slate-100",
+			)}
+		>
+			<LayoutDashboard className="h-4 w-4 mr-2" />
+			<p>Introducing Dashboard</p>
+			<ArrowRight className="h-4 w-4 ml-2" />
+		</Link>
 	);
 }

@@ -9,12 +9,12 @@ export default function Page() {
 					<h1 className="text-3xl font-bold leading-none tracking-tighter md:text-5xl">
 						Frequently Asked Question
 					</h1>
-					<p className="py-6 text-lg font-light text-neutral-500">
-						Find answers to common questions about our website/app, simplifying
-						your queries for a smoother experience.
+					<p className="py-6 text-lg font-light text-slate-700">
+						Find answers to common questions about our website, simplifying your
+						queries for a smoother experience.
 					</p>
 				</div>
-				<div className="flex flex-col items-center justify-center gap-4">
+				<div className="flex flex-col items-center justify-center">
 					<FAQ />
 				</div>
 			</div>

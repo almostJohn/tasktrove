@@ -2,7 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 import { Check } from "lucide-react";
 import { buttonVariants } from "~/components/ui/button";
-import { cn } from "~/util/cn";
+import { cn } from "~/lib/utils";
 
 const premiumTierList = [
 	{
@@ -24,46 +24,50 @@ export function PremiumTier() {
 		<div
 			className={cn(
 				"card shadow md:card-side",
-				"bg-white rounded-box border-2 border-neutral-900",
+				"bg-white rounded-lg border-2 border-teal-500",
 			)}
 		>
 			<div className="card-body">
-				<div className="flex justify-between">
-					<h1
-						className={cn(
-							"card-title",
-							"font-bold text-2xl leading-none tracking-tighter",
-						)}
-					>
-						Premium
-					</h1>
-					<div className="inline-flex px-3 py-2 rounded-full bg-neutral-200 border-transparent items-center text-center text-sm font-medium">
-						Lifetime
-					</div>
-				</div>
-				<p className="py-2 font-light">
+				<h1
+					className={cn(
+						"card-title",
+						"text-xl font-bold leading-tight tracking-tighter md:text-2xl",
+					)}
+				>
+					Pro
+				</h1>
+				<p className="py-4 text-sm font-medium">
 					Access to task templates. Unlock all features.
 				</p>
-				<div className="inline-flex border-2 border-neutral-900 bg-transparent rounded-lg px-6 py-3 items-center justify-center">
-					<h3 className="text-4xl font-bold">$20</h3>
-					<div className="ml-2 flex flex-col">
-						<p className="text-xs font-medium">one-time payment</p>
-						<p className="text-xs text-neutral-500">plus local taxes</p>
+				<div className="inline-flex items-center justify-center w-full px-4 py-3 border border-slate-300 bg-transparent text-sm font-medium rounded-md">
+					<h1 className="text-4xl font-bold leading-none">$20</h1>
+					<div className="flex flex-col ml-2">
+						<p className="text-xs font-medium">one-time paymant</p>
+						<p className="text-xs text-slate-500">plus local taxes</p>
 					</div>
 				</div>
-				<div className="py-6 mx-auto flex flex-col justify-center gap-4">
-					{premiumTierList.map((item, index) => (
-						<div key={index} className="flex items-center justify-center">
-							<Check className="h-4 w-4" />
-							<p className="ml-3">{item.title}</p>
+				<div className="py-4 mx-auto flex flex-col justify-center gap-4">
+					{premiumTierList.map((item, i) => (
+						<div key={i} className="flex items-center justify-center">
+							<>
+								<Check className="h-4 w-4 shrink-0 text-teal-500" />
+								<p className="ml-3">{item.title}</p>
+							</>
 						</div>
 					))}
 				</div>
-				<hr className="border-t border-neutral-300 visible w-full" />
-				<div className="mx-auto w-full flex items-center justify-center pt-6">
-					<Link href="/sign-in" className={cn(buttonVariants(), "w-full")}>
-						Get Started
-					</Link>
+				<div className="pt-6 border-t border-slate-300 w-full visible">
+					<div className="flex items-center justify-center w-full">
+						<Link
+							href="/sign-in"
+							className={cn(
+								buttonVariants({ className: "bg-teal-500 hover:bg-teal-600" }),
+								"w-full",
+							)}
+						>
+							Get Started
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>

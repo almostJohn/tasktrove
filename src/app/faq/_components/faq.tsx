@@ -1,47 +1,47 @@
 import * as React from "react";
-import { cn } from "~/util/cn";
+import { cn } from "~/lib/utils";
 
 export function FAQ() {
 	return (
 		<>
 			<div
 				className={cn(
-					"collapse collapse-arrow border border-neutral-300 bg-white",
-					"rounded-md",
+					"collapse collapse-arrow border-t border-slate-300 bg-white",
+					"rounded-none",
 				)}
 			>
 				<input type="radio" name="faq-accordion" defaultChecked />
 				<div className="collapse-title text-lg font-bold leading-none tracking-tight">
-					What are the limits of the Free plan?
+					What are the limits of the Basic plan?
 				</div>
 				<div className="collapse-content">
 					<p className="text-sm leading-4">
-						The Free plan gives you access to basic task management. However,
-						you cannot create tasks in the same way as in the Premium plan.
+						The Basic plan gives you access to basic task management. However,
+						you cannot create tasks in the same way as in the Pro plan.
 					</p>
 				</div>
 			</div>
 			<div
 				className={cn(
-					"collapse collapse-arrow border border-neutral-300 bg-white",
-					"rounded-md",
+					"collapse collapse-arrow border-t border-slate-300 bg-white",
+					"rounded-none",
 				)}
 			>
 				<input type="radio" name="faq-accordion" />
 				<div className="collapse-title text-lg font-bold leading-none tracking-tight">
-					What&apos;s included in the Premium plan?
+					What&apos;s included in the Pro plan?
 				</div>
 				<div className="collapse-content">
 					<p className="text-sm leading-4">
-						The Premium plan gives you access to the task templates and advanced
+						The Pro plan gives you access to the task templates and advanced
 						task management features.
 					</p>
 				</div>
 			</div>
 			<div
 				className={cn(
-					"collapse collapse-arrow border border-neutral-300 bg-white",
-					"rounded-md",
+					"collapse collapse-arrow border-t border-slate-300 bg-white",
+					"rounded-none",
 				)}
 			>
 				<input type="radio" name="faq-accordion" />
@@ -60,8 +60,8 @@ export function FAQ() {
 			</div>
 			<div
 				className={cn(
-					"collapse collapse-arrow border border-neutral-300 bg-white",
-					"rounded-md",
+					"collapse collapse-arrow border-t border-slate-300 bg-white",
+					"rounded-none",
 				)}
 			>
 				<input type="radio" name="faq-accordion" />
@@ -82,8 +82,8 @@ export function FAQ() {
 			</div>
 			<div
 				className={cn(
-					"collapse collapse-arrow border border-neutral-300 bg-white",
-					"rounded-md",
+					"collapse collapse-arrow border-t border-slate-300 bg-white",
+					"rounded-none",
 				)}
 			>
 				<input type="radio" name="faq-accordion" />

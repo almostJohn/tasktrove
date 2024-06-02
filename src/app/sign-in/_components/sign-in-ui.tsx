@@ -2,7 +2,7 @@ import * as React from "react";
 import { SiGoogle as Google } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
 import { buttonVariants } from "~/components/ui/button";
-import { cn } from "~/util/cn";
+import { cn } from "~/lib/utils";
 import { siteConfig } from "~/config/site";
 
 export function SignInUI() {
@@ -10,7 +10,7 @@ export function SignInUI() {
 		<div
 			className={cn(
 				"card shadow md:card-side",
-				"bg-white border border-neutral-300 md:w-[500px]",
+				"bg-white rounded-box border border-neutral-300 md:w-[500px]",
 			)}
 		>
 			<div className="card-body">

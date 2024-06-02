@@ -9,7 +9,7 @@ export function PrivacyContent() {
 				tsktrve.vercel.app (the “Site”).
 				<br />
 				<br />
-				<strong className="text-lg leading-4 text-neutral-900">
+				<strong className="text-lg leading-4 text-black">
 					Personal Information we collect
 				</strong>
 				<br />
@@ -27,11 +27,11 @@ export function PrivacyContent() {
 				identification and authentication.
 				<br />
 				<br />
-				We <strong className="text-neutral-900 font-bold">DO NOT</strong> share
-				any personal information to third parties.
+				We <strong className="text-black font-bold">DO NOT</strong> share any
+				personal information to third parties.
 				<br />
 				<br />
-				<strong className="text-lg leading-4 text-neutral-900">Changes</strong>
+				<strong className="text-lg leading-4 text-black">Changes</strong>
 				<br />
 				<br />
 				We may update this privacy policy from time to time in order to reflect,

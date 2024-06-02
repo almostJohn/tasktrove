@@ -3,11 +3,7 @@
 import * as React from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import {
-	SiDiscord as Discord,
-	SiX as X,
-	SiFacebook as Facebook,
-} from "@icons-pack/react-simple-icons";
+import { siteConfig } from "~/config/site";
 
 export function SiteFooter() {
 	const pathname = usePathname();
@@ -17,45 +13,31 @@ export function SiteFooter() {
 	}
 
 	return (
-		<footer className="footer footer-center bottom-0 p-11 bg-neutral-900 text-neutral-100 w-full">
-			<nav className="grid grid-flow-col gap-4">
-				<Link href="/faq" className="link link-hover">
-					FAQ
+		<footer className="mt-auto w-full bg-transparent border-t border-slate-300 pt-6 pb-12">
+			<div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center px-12">
+				<Link
+					href="/"
+					className="text-lg font-bold leading-none tracking-tighter md:text-2xl"
+				>
+					{siteConfig.name}
 				</Link>
-				<Link href="/terms" className="link link-hover">
-					Terms
-				</Link>
-				<Link href="/privacy" className="link link-hover">
-					Privacy
-				</Link>
-			</nav>
-			<nav>
-				<div className="grid grid-flow-col gap-4">
+				<div className="text-slate-500 text-sm mt-4 md:mt-0">
+					&copy; {new Date().getFullYear()} {siteConfig.name}. —{" "}
 					<Link
-						href="https://discord.com/"
-						className="transition-colors hover:text-neutral-400"
+						href="/terms"
+						className="underline transition-colors hover:text-black"
 					>
-						<Discord className="h-4 w-4" />
-					</Link>
+						Terms
+					</Link>{" "}
+					&amp;{" "}
 					<Link
-						href="https://twitter.com/"
-						className="transition-colors hover:text-neutral-400"
+						href="/privacy"
+						className="underline transition-colors hover:text-black"
 					>
-						<X className="h-4 w-4" />
-					</Link>
-					<Link
-						href="https://facebook.com/"
-						className="transition-colors hover:text-neutral-400"
-					>
-						<Facebook className="h-4 w-4" />
+						Privacy
 					</Link>
 				</div>
-			</nav>
-			<aside>
-				<p className="text-xs">
-					&copy; {new Date().getFullYear()} tasktrove. All Rights Reserved.
-				</p>
-			</aside>
+			</div>
 		</footer>
 	);
 }

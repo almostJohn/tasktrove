@@ -8,10 +8,14 @@ export default function Page() {
 			<SignInUI />
 			<div className="pt-5 mx-auto flex items-center">
 				<div className="max-w-sm">
-					<p className="text-xs font-light md:text-sm">
+					<p className="text-xs text-center font-light md:text-sm">
 						By signing in, you agree to our{" "}
 						<Link href="/terms" className="link link-hover font-bold">
 							Terms of Service
+						</Link>{" "}
+						and{" "}
+						<Link href="/privacy" className="link link-hover font-bold">
+							Privacy Policy
 						</Link>
 					</p>
 				</div>

@@ -10,7 +10,7 @@ export default function Page() {
 					<h1 className="text-3xl font-bold leading-none tracking-tighter md:text-5xl">
 						Worry about your tasks, not your bill.
 					</h1>
-					<p className="py-6 text-lg font-light text-neutral-500">
+					<p className="py-6 text-lg font-light text-slate-700">
 						We wanted pricing to be as simple as possible, No calculator needed.
 					</p>
 				</div>

@@ -2,9 +2,9 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
-import { cn } from "~/util/cn";
+import { cn } from "~/lib/utils";
 import { buttonVariants } from "./ui/button";
+import { Icons } from "./icons";
 import { docsConfig } from "~/config/docs";
 
 export function MobileNav() {
@@ -42,24 +42,24 @@ export function MobileNav() {
 				tabIndex={0}
 				role="button"
 				className={cn(
-					buttonVariants({ variant: "ghost" }),
-					"px-2 py-1.5 md:hidden hover:bg-transparent",
+					buttonVariants({ variant: "ghost", size: "icon" }),
+					"h-9 w-9 md:hidden",
 				)}
 				onClick={toggleDropdown}
 			>
-				{interacted ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+				<Icons.menu />
 			</div>
 			{interacted && (
 				<ul
 					tabIndex={0}
-					className="flex flex-col dropdown-content mt-3 z-[1] py-2 shadow border border-neutral-200 bg-white rounded-md w-52"
+					className="flex flex-col dropdown-content mt-2 z-[1] py-2 shadow border border-slate-200 bg-white rounded-md w-52"
 				>
 					{docsConfig.navItems.map((item) => (
 						<li key={item.href}>
 							<Link
 								href={item.href}
 								className={cn(
-									"inline-flex border border-transparent bg-transparent px-4 py-2 w-full items-center text-sm font-medium transition-colors hover:bg-neutral-200",
+									"inline-flex border border-transparent bg-transparent h-8 px-3 py-2 w-full items-center text-sm font-medium transition-colors hover:bg-slate-200",
 								)}
 							>
 								{item.label}

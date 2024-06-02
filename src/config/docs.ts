@@ -8,5 +8,9 @@ export const docsConfig = {
 			label: "Pricing",
 			href: "/pricing",
 		},
+		{
+			label: "FAQ",
+			href: "/faq",
+		},
 	],
 };
