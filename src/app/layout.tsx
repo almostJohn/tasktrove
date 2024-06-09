@@ -1,10 +1,8 @@
 import * as React from "react";
 import type { Metadata, Viewport } from "next";
-import { inter, jetBrainsMono } from "~/util/fonts";
+import { inter, jetBrainsMono, fontSans } from "~/util/fonts";
 import { cn } from "~/lib/utils";
 import { siteConfig } from "~/config/site";
-import { SiteHeader } from "~/components/site-header";
-import { SiteFooter } from "~/components/site-footer";
 
 import "../styles/globals.css";
 
@@ -39,15 +37,14 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"bg-white text-black antialiased selection:bg-teal-300/60",
+					"bg-background text-foreground antialiased",
+					fontSans.variable,
 					inter.variable,
 					jetBrainsMono.variable,
 				)}
 			>
-				<div className="mx-auto container relative">
-					<SiteHeader />
+				<div className="relative flex min-h-screen flex-col bg-background">
 					{children}
-					<SiteFooter />
 				</div>
 			</body>
 		</html>

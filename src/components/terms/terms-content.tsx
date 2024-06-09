@@ -2,8 +2,8 @@ import * as React from "react";
 
 export function TermsContent() {
 	return (
-		<article className="prose text-black">
-			<p className="text-black">
+		<article>
+			<p>
 				By visiting our site and/ or purchasing subscriptions from us, you
 				engage in our “Service” and agree to be bound by the following terms and
 				conditions (“Terms of Service”, “Terms”). These Terms of Service apply

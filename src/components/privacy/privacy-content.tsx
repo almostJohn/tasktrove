@@ -2,8 +2,8 @@ import * as React from "react";
 
 export function PrivacyContent() {
 	return (
-		<article className="prose text-black">
-			<p className="text-black">
+		<article>
+			<p>
 				This Privacy Policy describes how your personal information is
 				collected, used, and shared when you visit or make a purchase from
 				tsktrve.vercel.app (the “Site”).
@@ -23,15 +23,15 @@ export function PrivacyContent() {
 				</span>
 				<br />
 				<br />
-				We use your <strong className="text-black font-bold">Google</strong> for
+				We use your <strong className="font-bold">Google</strong> for
 				identification and authentication.
 				<br />
 				<br />
-				We <strong className="text-black font-bold">DO NOT</strong> share any
-				personal information to third parties.
+				We <strong className="font-bold">DO NOT</strong> share any personal
+				information to third parties.
 				<br />
 				<br />
-				<strong className="text-lg leading-4 text-black">Changes</strong>
+				<strong className="text-lg leading-4">Changes</strong>
 				<br />
 				<br />
 				We may update this privacy policy from time to time in order to reflect,

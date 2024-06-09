@@ -41,7 +41,7 @@ export function PageHeaderDescription({
 	return (
 		<p
 			className={cn(
-				"max-w-[750px] text-center text-lg font-light text-slate-700",
+				"max-w-[750px] text-center text-lg font-light text-foreground",
 				className,
 			)}
 			{...props}

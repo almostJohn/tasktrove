@@ -1,29 +1,30 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { cn } from "~/lib/utils";
-import { NavigationBarCenter } from "./navigation-bar";
 import { docsConfig } from "~/config/docs";
 
 export function MainNav() {
 	const pathname = usePathname();
 
 	return (
-		<NavigationBarCenter className="hidden gap-4 items-center text-sm font-medium md:flex">
+		<div className="hidden items-center space-x-4 md:flex">
 			{docsConfig.navItems.map((item) => (
 				<Link
 					key={item.href}
 					href={item.href}
 					className={cn(
-						"transition-colors text-neutral-700/60 hover:text-black",
-						pathname === item.href ? "text-black" : "hover:text-neutral-700",
+						"transition-colors hover:text-foreground/80",
+						pathname === item.href
+							? "text-foreground"
+							: "hover:text-foreground/60",
 					)}
 				>
 					{item.label}
 				</Link>
 			))}
-		</NavigationBarCenter>
+		</div>
 	);
 }
