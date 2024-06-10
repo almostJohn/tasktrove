@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function SignInPage() {
 	return (
 		<>
-			<Card className="md:w-[340px]">
+			<Card className="md:w-[350px]">
 				<CardHeader>
 					<CardTitle>
 						<Link href="/">{siteConfig.name}</Link>
